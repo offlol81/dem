@@ -12,18 +12,7 @@ require_once 'init.php';
     <h1>Банкетам.Нет</h1>
     <p style="text-align:center; color:#777; margin-bottom:15px;">
         Бронирование помещений для банкетов
-    </p>
-    
-    <!-- Слайдер -->
-    <div class="slider">
-        <div class="slide active"><img src="https://picsum.photos/400/200?1"></div>
-        <div class="slide"><img src="https://picsum.photos/400/200?2"></div>
-        <div class="slide"><img src="https://picsum.photos/400/200?3"></div>
-        <div class="slide"><img src="https://picsum.photos/400/200?4"></div>
-        <button onclick="prevSlide()">❮</button>
-        <button onclick="nextSlide()">❯</button>
-    </div>
-    
+    </p>   
     <!-- Кнопки -->
     <?php if (User::isLoggedIn()): ?>
         <?php if (User::isAdmin()): ?>
