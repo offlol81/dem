@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    padding: 10px;
+}
+
+.container {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #6C63FF;
+    text-align: center;
+    margin: 15px 0;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    background: #6C63FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5A52D5;
+}
+
+a {
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+.error {
+    background: #fee;
+    color: #c33;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.success {
+    background: #efe;
+    color: #3a3;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Слайдер */
+.slider {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #000;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider button {
+    position: absolute;
+    top: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.7);
+    color: #000;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.slider button:first-of-type {
+    left: 10px;
+}
+
+.slider button:last-of-type {
+    right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
